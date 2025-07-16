@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Stock Symbol</th>
+                <th>Action</th>
+                <th>Number Sold</th>
+                <th>Price Sold</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in hstry %}
+            <tr>
+                <td>{{row.stock}}</td>
+                <td>{{row.action}}</td>
+                <td>{{row.owned}}</td>
+                <td>{{row.price | usd}}</td>
+                <td>{{row.timestamp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+{% endblock %}

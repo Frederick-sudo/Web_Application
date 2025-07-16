@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped mt-4">
+                <thead>
+                    <tr>
+                        <th>Stocks Owned</th>
+                        <th>Shares</th>
+                        <th>Price per Stock</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in portfolio %}
+                    <tr>
+                        <td>{{item.stock}}</td>
+                        <td>{{item.owned}}</td>
+                        <td>{{item.price  | usd}}</td>
+                        <td>{{item.total  | usd}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+        </table>
+
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Cash Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in stockpile %}
+                <tr>
+                     <td>{{item.cash  | usd}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Total Holdings</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in stonks %}
+                <tr>
+                     <td>{{item.overall_total | usd}}</td>
+                   </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote Stocks
+{% endblock %}
+
+{% block main %}
+        <!-- Display stock quotes -->
+        <table class="table table-striped mt-4">
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>Stock Price</th>
+                        <th>Stock Symbol</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{result.name}}</td>
+                        <td>{{result.price | usd}}</td>
+                        <td>{{result.symbol}}</td>
+                    </tr>
+                </tbody>
+        </table>
+
+{% endblock %}
