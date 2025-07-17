@@ -1,25 +1,42 @@
-CS50 Finance – Stock Portfolio Web Application
+Project Description:
 
-A dynamic stock trading simulation platform developed as part of Harvard University's CS50x course. This full-stack web application enables users to manage a mock stock portfolio using real-time data.
+A full-stack web application that simulates a stock trading platform that was developed as part of Harvard University’s CS50x course. This web application allows users to manage a mock stock portfolio using real time data through API.
 
-**Key Features**
--User authentication with password hashing for secure login.
--Buy and sell stocks using real-time prices via the IEX API.
--Portfolio overview with current market valuations.
--Transaction history tracking for all trades.
--SQLite database for persistent data storage.
+Features:
+User authentication with a hashing for password for added security measures.
+Through IEX API, users can buy and sell stocks using REAL TIME prices.
+Overview of portfolio with current market valuations.
+Tracks history of ALL transactions.
+Uses SQLite database to store data.
 
-**Technologies Used**
-- **Python (Flask)** – Backend web framework.
-- **SQLite** – Lightweight relational database.
-- **HTML5 & CSS3** – Frontend interface.
-- **Jinja2 Templates** – Dynamic HTML rendering.
-- **IEX Cloud API** – Real-time stock price data.
+How each technology was used:
+Python/Flask
+-Built the core backend of the web application
+-Manages user sessions, stock trading logic, and authentication
+-Equipped with server side validation
+-Services dynamic HTML web pages via routes
 
-**How to Run Locally**
-1. Clone this repository:
-2. Set up a Python virtual environment and install dependencies:
-3. Run the application:
+SQLite
+-Stores persistent data of user accounts and their hashed passwords, stock purchase and sell history, and real time portfolio valuation
+-Wrote SQL queries in python to update and fetch necessary data
+
+HTML (with Jinja2)
+-Built frontend of the web app
+-Embedded with dynamic data from Flask
+
+CSS
+-Provides basic styling for tables, forms, and navigation through bootstrap
+
+IEX API
+-Handles real-time stock price fetching using API request from the backend code from Python
+	
+How to run:
+Clone the repository (https://github.com/Frederick-sudo/cs50-finance)
+Set up a virtual environment (python -m venv venv source venv/bin/activate # On Windows, use venv\Scripts\activate)
+Install dependencies (pip install -r requirements.txt)
+Set your IEX API key ina “.env” file or as an environment variable
+Run the flask app (flask run)
+Visit the app in your browser (http://127.0.0.1:5000/) (in your browser after running the Flask app locally.
 
 Project Background
 Built as a core project in **CS50x: Introduction to Computer Science** from Harvard University, this app simulates real-world stock trading platforms, demonstrating full-stack web development skills.
