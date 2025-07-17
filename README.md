@@ -39,4 +39,4 @@ Run the flask app (flask run)
 Visit the app in your browser (http://127.0.0.1:5000/) (in your browser after running the Flask app locally.
 
 Project Background
-Built as a core project in **CS50x: Introduction to Computer Science** from Harvard University, this app simulates real-world stock trading platforms, demonstrating full-stack web development skills.
+Built as a core project in **CS50x: Computer Science Course** from Harvard University, this app simulates real-world stock trading platforms, demonstrating full-stack web development skills.
