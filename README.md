@@ -31,12 +31,17 @@ IEX API
 -Handles real-time stock price fetching using API request from the backend code from Python
 	
 How to run:
-Clone the repository (https://github.com/Frederick-sudo/cs50-finance)
-Set up a virtual environment (python -m venv venv source venv/bin/activate # On Windows, use venv\Scripts\activate)
-Install dependencies (pip install -r requirements.txt)
+Clone the repository 
+
+Set up a virtual environment 
+
+Install dependencies 
+
 Set your IEX API key ina “.env” file or as an environment variable
-Run the flask app (flask run)
-Visit the app in your browser (http://127.0.0.1:5000/) (in your browser after running the Flask app locally.
+
+Run the flask app 
+
+Visit the app in your browser (http://127.0.0.1:5000/) (in your browser after running the Flask app locally.)
 
 Project Background
 Built as a core project in **CS50x: Computer Science Course** from Harvard University, this app simulates real-world stock trading platforms, demonstrating full-stack web development skills.
