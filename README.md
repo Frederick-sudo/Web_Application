@@ -31,6 +31,20 @@ CSS
 
 IEX API
 -Handles real-time stock price fetching using API request from the backend code from Python
+
+How to run:
+
+Navigate to the Finance folder
+
+Install dependencies
+
+Set the API key for stock prices
+
+Run the Flask application
+
+Open the provided URL in a web browser
+
+Register a user, log in, and start buying/selling stocks.
 	
 Project Background:
 
