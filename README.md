@@ -3,6 +3,7 @@ Project Description:
 A full-stack web application that simulates a stock trading platform that was developed as part of Harvard University’s CS50x course. This web application allows users to manage a mock stock portfolio using real time data through API.
 
 Features:
+
 User authentication with a hashing for password for added security measures.
 Through IEX API, users can buy and sell stocks using REAL TIME prices.
 Overview of portfolio with current market valuations.
@@ -10,6 +11,7 @@ Tracks history of ALL transactions.
 Uses SQLite database to store data.
 
 How each technology was used:
+
 Python/Flask
 -Built the core backend of the web application
 -Manages user sessions, stock trading logic, and authentication
