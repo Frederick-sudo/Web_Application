@@ -32,16 +32,7 @@ CSS
 IEX API
 -Handles real-time stock price fetching using API request from the backend code from Python
 	
-How to run:
-Clone the repository 
 
-Set up a virtual environment 
-
-Install dependencies 
-
-Set your IEX API key ina “.env” file or as an environment variable
-
-Run the flask app 
 
 Visit the app in your browser (http://127.0.0.1:5000/) (in your browser after running the Flask app locally.)
 
