@@ -45,6 +45,8 @@ Run the Flask application
 Open the provided URL in a web browser
 
 Register a user, log in, and start buying/selling stocks.
+
+Ensure you have write permissions in the project directories to create/modify files
 	
 Project Background:
 
